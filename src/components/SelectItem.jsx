@@ -10,7 +10,7 @@ const optionSelect = [
 ];
 
 export default function SelectItem({ onChange, shelf }) {
-  const [initShelf] = useState(shelf || "");
+  const [initShelf] = useState(shelf || SHELF_VALUE.NONE);
   const handleChange = (el) => {
     onChange(el);
   };
